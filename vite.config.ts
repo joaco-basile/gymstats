@@ -4,6 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/gymstats/',
   plugins: [
     react(),
     VitePWA({
@@ -14,8 +15,8 @@ export default defineConfig({
         short_name: 'GymStats',
         description: 'Calories, food log and gym routines. Works offline, data stays on your device.',
         lang: 'en',
-        start_url: '/',
-        scope: '/',
+        start_url: '/gymstats/',
+        scope: '/gymstats/',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#0f1115',
